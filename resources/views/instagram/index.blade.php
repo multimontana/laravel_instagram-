@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Instagram get photos</title>
     @include('assets.css')
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="container">
-    <div class="insta-post-header d-flex">
+    <div class="insta-post-header d-flex justify-content-center">
         <div>
             <h2><i class="fab fa-instagram" aria-hidden="true"></i>
                 <input type="text" class="puple"></h2>
@@ -230,7 +230,6 @@
                         window.location.href = '/' + item.id
                     }
                 })
-                alert('аккаунт не найдена')
             })
 
             $(document).on('click', '.container_insta_post', function () {
