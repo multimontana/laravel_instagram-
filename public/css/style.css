@@ -1,0 +1,278 @@
+.close-modal {
+    position: absolute;
+    z-index: 10005;
+    right: 5px;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #9b0000;
+}
+
+.insta-post-header h2 {
+    text-align: center;
+}
+
+.insta-post-header {
+    border-bottom: 1px solid rgba(181, 181, 181, 0.34);
+    margin-bottom: 25px;
+}
+
+
+.container_insta_post {
+    position: relative;
+    width: 293px;
+    height: 330px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: 15px;
+}
+
+.image_insta_post {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .0s ease;
+    backface-visibility: hidden;
+}
+
+.middle_insta_post {
+    transition: .0s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container_insta_post:hover .image_insta_post {
+    opacity: 0.4;
+}
+
+.container_insta_post:hover .middle_insta_post {
+    opacity: 1;
+}
+
+.icons-comment-like i {
+    color: white;
+    font-size: 18px;
+}
+
+.icons-comment-like span {
+    color: white;
+    font-size: 15px;
+    margin-left: 6px;
+}
+
+.icons-comment-like {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content-posts-instagram {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.post-icon-insta {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    z-index: 100;
+    color: white;
+    font-size: 17px;
+}
+
+.v-lg {
+    width: 800px;
+}
+
+.extorio_load_more_loader_item {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #959595;
+    border-bottom: 4px solid #959595;
+    width: 50px;
+    height: 50px;
+    animation: extorio_load_more_spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes extorio_load_more_spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1440deg);
+    }
+}
+
+#myCarousel {
+    width: 440px;
+}
+
+.content-dialog-post-insta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.instagram-video-content {
+    position: relative;
+}
+
+.playing-video-instagram {
+    position: absolute;
+    z-index: 1000;
+    top: 46%;
+    right: 42%;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.costume-right, .costume-left {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+}
+
+.costume-right {
+    right: 10px;
+}
+
+.costume-left {
+    left: 10px;
+}
+
+.costume-control:hover, .costume-control:active, .playing-video-instagram:hover {
+    color: rgba(218, 218, 218, 0.89) !important;
+}
+
+.costume-control .glyphicon {
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: black;
+}
+
+@media screen and (max-width: 850px) {
+    .v-lg {
+        width: 95%;
+    }
+
+    #myCarousel {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 341px) {
+
+}
+
+.comment-content {
+    width: 100%;
+    height: 430px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.comment-content-date {
+    width: 345px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.post-likes-added {
+    width: 100%;
+    padding: 0 22px;
+}
+
+.comment-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 0;
+}
+
+.comment-content::-webkit-scrollbar {
+    width: 0;
+    background-color: #ffffff;
+}
+
+.comment-content::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgba(188, 188, 188, 0.87)),
+    color-stop(0.72, rgba(169, 169, 169, 0.68)),
+    color-stop(0.86, rgba(128, 128, 128, 0.66)));
+}
+
+.d-flex {
+    display: flex;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.open-replace-comment {
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.click-download-post-videos {
+    color: #0b43c6;
+    font-size: 20px;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.swal2-popup, .swal2-content {
+    padding: 0 !important;
+}
+
+#myCarousel .slick-arrow {
+    background-color: transparent !important;
+    border: none;
+    position: absolute;
+    z-index: 100;
+    color: white;
+    top: 47%;
+    cursor: pointer;
+}
+
+#myCarousel .slick-arrow:nth-child(1) {
+    left: 15px;
+}
+
+#myCarousel .slick-arrow:nth-child(3) {
+    right: 15px;
+}
+
+.download-post-file {
+    position: absolute;
+    z-index: 10;
+    color: green;
+    left: 8px;
+    top: 5px;
+    cursor: pointer;
+}
