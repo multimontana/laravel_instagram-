@@ -24,8 +24,6 @@ class InstagramService
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $server_output = curl_exec($ch);
         curl_close($ch);
-        //cors error
-        // dd(json_decode($server_output));
 
         return $server_output;
     }

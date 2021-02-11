@@ -13,9 +13,14 @@
 </head>
 <body>
 <div class="container">
-    <div class="insta-post-header">
-        <h2><i class="fab fa-instagram" aria-hidden="true"></i>
-            <input type="text" class="puple"></h2>
+    <div class="insta-post-header d-flex">
+        <div>
+            <h2><i class="fab fa-instagram" aria-hidden="true"></i>
+                <input type="text" class="puple"></h2>
+        </div>
+        <div>
+            <button class="btn btn-success getButton">Получить</button>
+        </div>
     </div>
     <div class="content-posts-instagram">
 
@@ -219,12 +224,13 @@
                     });
                 }
             });
-            $('.puple').on('blur', function () {
+            $('.getButton').on('click', function () {
                 globalUsers.forEach(item => {
                     if (item.value == $(".puple").val()) {
                         window.location.href = '/' + item.id
                     }
                 })
+                alert('аккаунт не найдена')
             })
 
             $(document).on('click', '.container_insta_post', function () {

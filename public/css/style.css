@@ -1,3 +1,6 @@
+.getButton{
+    margin: 3px;
+}
 .close-modal {
     position: absolute;
     z-index: 10005;
