@@ -214,7 +214,7 @@
                                 id: user.user.pk
                             })
                         })
-                        a = users
+                        globalUsers = users
                         response(users);
                     });
                 }
