@@ -16,7 +16,7 @@
     <div class="insta-post-header d-flex justify-content-center">
         <div>
             <h2><i class="fab fa-instagram" aria-hidden="true"></i>
-                <input type="text" class="puple"></h2>
+                <input type="text" placeholder="Enter instagram username" class="puple"></h2>
         </div>
         <div>
             <button class="btn btn-success getButton">Получить</button>
@@ -51,7 +51,6 @@
                     case 'load-index-page':
                         $('.content-posts-instagram').append(`
                                                              <div class="container_insta_post" data-shortcode="${event.data.res.shortcode}">
-                                                                <div class="post-icon-insta"><i class="${event.data.res.post_data.post_icon}"></i></div>
                                                                  <img src="${event.data.res.display_url}"
                                                                       alt="Avatar" class="image_insta_post" style="width:100%; height: 100%">
                                                                  <div class="middle_insta_post">
