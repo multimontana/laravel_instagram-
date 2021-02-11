@@ -21,7 +21,7 @@ class InstagramController extends Controller
 
     public function index($id = '4997563433')
     {
-        return view('instagram.index', ['id' => $id], ["token" => '123']);
+        return view('instagram.index', ['id' => $id]);
     }
 
     public function getUserInfo(InstagramRequest $request)

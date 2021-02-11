@@ -38,7 +38,7 @@
         let worker = new Worker('{{asset("/js/worker/instagram.js")}}'),
             loader = true,
             post_open = true;
-        worker.postMessage({"method": "append-instagram-id", "id": "{{$id}}", "token": "{{$token}}"});
+        worker.postMessage({"method": "append-instagram-id", "id": "{{$id}}"});
 
         worker.onmessage = function (event) {
             if (!event.data.end) {
